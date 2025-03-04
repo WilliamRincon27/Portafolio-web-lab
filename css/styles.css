@@ -170,3 +170,62 @@ footer {
     gap: 1rem;
     margin-top: 15px;
 }
+
+.table-container {
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta los bordes que sobresalen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 50px;
+  }
+
+  .table-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    border: none;
+  }
+
+  thead th {
+    background-color: #ccc;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  thead th:first-child {
+    border-top-left-radius: 10px;
+  }
+  thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+  tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
